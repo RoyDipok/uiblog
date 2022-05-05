@@ -1,0 +1,406 @@
+@charset "UTF-8";
+a {
+  color: var(--white-color);
+}
+
+.content {
+  margin-top: 80px;
+  padding: 4rem;
+}
+
+.content .categorys {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.content .categorys a {
+  padding: .4rem 1rem;
+  border-radius: 30px;
+  border: 1px solid var(--first-color);
+  color: var(--white-color);
+  font-size: .7rem;
+  margin-right: .5rem;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+.content .categorys a:hover {
+  background-color: var(--first-color);
+}
+
+.content .title {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.content .sortdesc {
+  max-width: 900px;
+  margin: 0;
+  color: var(--text-light-color);
+}
+
+.content .date {
+  color: var(--text-light-color);
+}
+
+.content .date::before {
+  content: "Date:";
+  margin-right: .3rem;
+  color: var(--first-color);
+}
+
+.content .cover {
+  width: 100%;
+  border-radius: 20px;
+  margin: 2rem 0;
+}
+
+.content .postdata {
+  margin: 2rem 0;
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content .postdata img {
+  border-radius: 20px;
+}
+
+.content .postdata ul {
+  list-style: disc;
+  padding-left: 1.3rem;
+}
+
+.content .postdata a {
+  text-decoration: underline;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+.content .postdata a:hover {
+  color: var(--first-color);
+}
+
+.content .postdata blockquote {
+  border-radius: 20px;
+  padding: 1rem 2.2rem;
+  background-color: var(--dark-color-alt);
+  color: var(--white-color);
+  position: relative;
+}
+
+.content .postdata blockquote::before {
+  content: "“";
+  font-size: 6rem;
+  color: var(--text-light-color);
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: -8px;
+  left: 4px;
+}
+
+.content .share {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 7rem;
+}
+
+.content .share h4 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0;
+  color: var(--white-color);
+}
+
+.content .share a {
+  font-size: 1.3rem;
+  margin: .8rem;
+  border-radius: 50%;
+  background-color: var(--dark-color-alt);
+  padding: .5rem;
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+.content .share a:hover {
+  background-color: var(--first-color);
+}
+
+.morepost {
+  width: 100vw;
+  padding: 2rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.morepost h4 {
+  color: var(--white-color);
+  font-size: 1.5rem;
+}
+
+.morepost .flexbox {
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+}
+
+.morepost .flexbox .items {
+  width: 100%;
+  margin-bottom: 1rem;
+  width: 30%;
+  margin: .5rem;
+}
+
+.morepost .flexbox .items img {
+  width: 100%;
+  border-radius: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-right: 1rem;
+  min-width: 200px;
+}
+
+.morepost .flexbox .items h2 {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  margin: 0;
+  color: var(--white-color);
+}
+
+.morepost .flexbox .items p {
+  color: var(--text-light-color);
+  margin: 0;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+.morepost .flexbox .items .category {
+  padding: .2rem 1rem;
+  border-radius: 20px;
+  border: 2px solid var(--first-color);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  color: var(--white-color);
+}
+
+.morepost .flexbox .items:hover .content h3 {
+  text-decoration: underline;
+}
+
+.morepost .flexbox .items:hover .content p {
+  background-color: var(--first-color);
+}
+
+@media screen and (max-width: 953px) {
+  .morepost .flexbox .items {
+    width: 45%;
+    margin: .5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .morepost .flexbox .items {
+    width: 95%;
+    margin: .5rem 0;
+  }
+}
+
+.commentsection {
+  width: 100%;
+  padding: .5rem;
+  max-width: 700px;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+.commentsection .commentdivs {
+  max-height: 90vw;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.commentsection h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--white-color);
+  margin: 0 auto;
+}
+
+.commentsection .comment {
+  width: 100%;
+  background-color: var(--dark-color-alt);
+  color: var(--white-color);
+  border-radius: 20px;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 1rem 0;
+}
+
+.commentsection .comment img {
+  width: 30%;
+  min-width: 60px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.commentsection .comment .comdiv {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.commentsection .comment .comdiv h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.commentsection .comment .comdiv p {
+  margin: 0;
+  padding: 0;
+}
+
+.commentsection .comment .comdiv .date {
+  color: var(--text-light-color);
+  font-size: .8rem;
+  margin-bottom: .5rem;
+}
+
+.commentsection .comment .comdiv .date::before {
+  content: "Date:";
+  margin-right: .3rem;
+  color: var(--white-color);
+}
+
+.commentsection .commentform {
+  width: 100%;
+  border-radius: 20px;
+  margin: 2rem 0;
+  border: 2px solid var(--text-light-color);
+  padding: 1rem;
+}
+
+.commentsection .commentform h4 {
+  color: var(--white-color);
+  font-size: 1.5rem;
+}
+
+.commentsection .commentform .inputs .upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.commentsection .commentform .inputs input {
+  width: 45%;
+  margin: 1rem auto;
+  background-color: transparent;
+  color: var(--text-light-color);
+  border: 2px solid var(--text-light-color);
+  border-radius: 30px;
+  padding: 1rem 2rem;
+}
+
+.commentsection .commentform .inputs textarea {
+  width: 95%;
+  max-width: 95%;
+  min-width: 95%;
+  min-height: 150px;
+  background-color: transparent;
+  color: var(--text-light-color);
+  border: 2px solid var(--text-light-color);
+  border-radius: 30px;
+  padding: 1rem 2rem;
+}
+
+.commentsection .commentform .inputs .submitbt {
+  border-radius: 30px;
+  padding: 1rem 3rem;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1rem auto;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .commentsection .commentform .inputs input {
+    width: 100%;
+  }
+  .commentsection .commentform .inputs textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+/*# sourceMappingURL=postpage.css.map */

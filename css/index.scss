@@ -31,13 +31,6 @@ a {
     }
 }
 
-.flexbox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
 
 .featured {
     width: 100vw;
@@ -283,84 +276,3 @@ a {
     }
 }
 
-
-.subcribe{
-    width: 95%;
-    margin: 2rem auto;
-    border: 5px solid var(--first-color);
-    border-radius: 20px;
-    padding:1.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    .contants{
-        width: fit-content;
-        padding: 2rem;
-        width: 40%;
-    }
-    .form{
-        width: 60%;
-    }
-    .formdiv{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-evenly;
-        input{
-            width: 38%;
-            border: 1px solid var(--text-light-color);
-            background-color: transparent;
-            color: var(--text-light-color);
-            border-radius: 30px;
-            padding: 1rem;
-            font-weight: bold;
-            font-size: .8rem;
-        }
-        .submite{
-            width: 20%;
-            background-color: var(--first-color);
-            color: var(--white-color);
-            border-radius: 30px;
-            padding: 1rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            span{
-                font-size: .8rem;
-            }
-        }
-        
-    }
-    @media screen and (max-width: 1000px) {
-        .contants{
-            width: 100%;
-        }
-        .form{
-            width: 100%;
-        }
-    }
-    @media screen and (max-width: 1000px) {
-        .formdiv{
-            input{
-                width: 45%;
-            }
-            .submite{
-                width: 95%;
-                margin: 1.2rem;
-            }
-        }
-    }
-    @media screen and (max-width: 1000px) {
-        .formdiv{
-            input{
-                width: 100%;
-                margin: .5rem 0;
-            }
-            .submite{
-                width: 100%;
-                margin: .5rem 0;
-            }
-        }
-    }
-}
